@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Linear Programming Tutorial</title>
+    <style>
+      body {
+        background-color: #f2f2f2;
+        font-family: 'Times New Roman', Times, serif;
+        color: #333;
+      }
+      h1 {
+        text-align: center;
+        font-size: 36px;
+        font-family: 'Times New Roman', Times, serif;
+        color: #333;
+        margin-top: 50px;
+      }
+      .container {
+        width: 80%;
+        margin: 50px auto;
+      }
+      .topic {
+        font-size: 24px;
+        font-weight: bold;
+        color: #0366d6;
+        margin-bottom: 30px;
+        text-align: left;
+      }
+      .description {
+        font-size: 18px;
+        line-height: 2;
+        margin-bottom: 30px;
+        text-align: justify;
+      }
+      .historical {
+        border: 3px solid rgb(1, 46, 3);
+        color: #011124;
+        background-color: #c7f195;
+        line-height: 1;
+        font-size: 18px;
+        padding: 20px;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        text-align: left;
+        text-align: justify;
+      }
+      .example {
+        color: #021f3f;
+        border: 3px solid rgb(53, 2, 235);
+        background-color: #d1d7f7;
+        padding: 20px;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        text-align: left;
+      }
+      .equation {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        text-align: left;
+      }
+      .equation h3 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .equation p {
+        font-size: 20px;
+        margin-bottom: 0.5;
+      }
+      .note {
+        font-style: italic;
+        margin-top: 30px;
+        text-align: left;
+      }
+      .image {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CIVL301: Linear Programming Tutorial </h1>
+    <div class="container">
+      <div class="topic"> Session 1: Introduction to Linear Programming</div>
+      <div class="description">
+        Linear programming is a mathematical tool that helps solve problems where you need to find the best possible solution for a particular goal. The goal is called the objective function and it could be anything from maximizing profit to minimizing costs. There are certain rules, known as constraints, that the solution has to follow, such as limited resources or time. The solution must balance the objective function and the constraints to find the optimal result.
+      </div>
+      <div class="historical">
+        <h3> Historical Note: </h3>
+        <p class="description">
+        Leonid Vitalevich Kantorovich was a Soviet mathematician and economist who lived from 1912 to 1986. He is widely considered as one of the founders of linear programming, a field of mathematics that deals with finding the optimal solution to problems with constraints and objectives. Kantorovich received the Nobel Memorial Prize in Economic Sciences in 1975 for his work on linear programming and its applications in economics. His work has had a profound impact on the development of mathematical optimization and economics and continues to be relevant in these fields today.
+        </p>
+    </div>
+      <div class="equation">
+        <h3>1.1 Linear Equation </h3>
+        <p class="description">
+            A linear equation is a mathematical expression that defines a straight line relationship between two or more variables. It's used to model constraints and objectives in linear optimization problems. The general form of a linear equation is ax + by + ... + cz = d, where 'a', 'b', ..., 'c' are coefficients and 'x', 'y', ..., 'z' are variables. 
+        </p>
+      </div>
+      <div class="equation">
+        <p class="description">
+            The equation "y = ax + b" is a linear equation in the slope-intercept form, where 'a' is the slope of the line and 'b' is the y-intercept. The slope of the line represents the rate of change between the independent variable (x) and the dependent variable (y), and the y-intercept represents the value of y when x is equal to zero. This equation can be used to represent a line in a 2D coordinate system, where x and y are the variables, and the line can be plotted using the values of 'a' and 'b'. 
+        </p>
+        </div>
+      <div class="equation">
+        <h3>1.2 Slope </h3>
+        <p class="description">
+            In a linear equation, the slope represents the rate of change between two variables. It's the ratio of the change in the dependent variable (y) to the change in the independent variable (x), or the coefficient of the x-term. The slope is a measure of how steep the line is, and it can be positive, negative, or zero. A positive slope indicates that the line increases as x increases, while a negative slope indicates that the line decreases as x increases. A slope of zero indicates that the line is horizontal. The slope is also known as the gradient of the line.       
+        </p>
+      </div>
+      <div class="example">
+        <h3> Example </h3>
+        <p class="description">
+            To calculate the slope of a line, you need two points on the line. Let's say you have two points (x1, y1) and (x2, y2). The slope (m) of the line can be calculated using the following formula: <br>
+ 
+            m = (y2 - y1) / (x2 - x1) <br>
+            
+            For example, let's say you have two points (2, 4) and (4, 8). The slope of the line that passes through these two points can be calculated as follows: <br>
+            
+            m = (8 - 4) / (4 - 2) = 4 / 2 = 2 <br>
+            
+            So the slope of the line is 2, which means that the line has a positive slope and rises as x increases.        </p>
+      </div>
+      <div class="equation">
+        <h3>Linear Programming Formulation</h3>
+        <p>
+          Let's consider a linear programming problem with two variables, x and y, and two constraints:
+        </p>
+        <p>
+          Maximize: z = 4x + 3y<br>
+          Subject to:<br>
+          x + y ≤ 6<br>
+          2x + y ≥ 2<br>
+          x, y ≥ 0
+        </p>
+      </div>
+      <div class="note">
+        Note: The example above is a simple linear programming problem with two variables and two constraints. More complex problems can have more variables and constraints.
+      </div>
+      </div>
+        <img src="path/to/your/image2.jpg" class="image">
+      </div>
+    </div>
+  </body>
+</html>
